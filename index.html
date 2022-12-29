@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial | Apolo</title>
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <!-- PARTE MOBILE DO HEADER -->
+            <div class="header__container--mobile">
+                <div class="header__content--mobile">
+                    <a class="header__logo--mobile" href="#!"><img src="assets/img/logo.png" alt="logo Apolo celular"></a>
+                    <input class="header__search--tablet" type="search" placeholder="Buscar">
+                    <button onclick="openMenu()" class="header__button--open" aria-label="Abrir Menu-lateral"><img src="assets/img/menu.png" alt></button>
+                </div>
+
+                <input class="header__search--mobile" type="search" placeholder="Buscar">
+            </div>
+            <!-- FIM DA PARTE MOBILE DO HEADER -->
+
+            
+            <!-- PARTE DESKTOP DO HEADER -->
+            <div class="header__container--desktop">
+                <div class="header__content--desktop">
+                    <a class="header__logo--desktop" href="#!"><img src="assets/img/logo.png" alt="logo Apolo computador"></a>
+                    <p class="header__text">Vista a música</p>
+                    <input class="header__search--desktop" type="search" placeholder="Buscar">
+
+                    <div class="header__infoUsers">
+                        <a class="infoUsers__entrar" href="#!">
+                            <img class="infoUsers__img--camiseta" src="assets/img/camiseta-entrar.png" alt>
+                            <p class="infoUsers__text">Entrar</p>
+                            <img class="infoUsers__img--seta" src="assets/img/botao-entrar.png" alt>
+                        </a>
+    
+                        <a class="infoUsers__carrinho" href="#!">
+                            <img class="infoUsers__img--carrinho" src="assets/img/carrinho.png" alt>
+                            <span class="infoUsers__contador">0</span>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="header__navigation">
+                    <ul class="header__lista">
+                        <li class="header__item"><a href="#!" class="header__link">Camisetas</a></li>
+                        <li class="header__item"><a href="#!" class="header__link">Blusão</a></li>
+                        <li class="header__item"><a href="#!" class="header__link">Moletons</a></li>
+                        <li class="header__item"><a href="#!" class="header__link">Manga longa</a></li>
+                        <li class="header__item"><a href="#!" class="header__link">Parceiros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside class="menu">
+            <div class="menu__header">
+                <a class="menu__logo--mobile" href="#!"><img src="assets/img/logo.png" alt="logo Apolo celular"></a>
+                <button onclick="closeMenu()" class="menu__button--close" aria-label="Fechar Menu-lateral"><img src="assets/img/menu.png" alt></button>
+            </div>
+
+            <div class="menu__header--info">
+                <a class="menu__entrar" href="#!">
+                    <img class="entrar__camiseta" src="assets/img/camiseta-entrar.png" alt>
+                    <p class="entrar__text">Entrar</p>
+                    <img class="entrar__seta" src="assets/img/botao-entrar.png" alt>
+                </a>
+
+                <a class="menu__carrinho" href="#!">
+                    <img class="carrinho__compras" src="assets/img/carrinho.png" alt>
+                    <span class="carrinho__contador">0</span>
+                </a>
+            </div>
+
+            <div class="menu__body">
+                <ul class="menu__lista">
+                    <li class="menu__lista"><a href="#!" class="menu__link">Camisetas</a></li>
+                    <li class="menu__lista"><a href="#!" class="menu__link">Blusão</a></li>
+                    <li class="menu__lista"><a href="#!" class="menu__link">Moletons</a></li>
+                    <li class="menu__lista"><a href="#!" class="menu__link">Manga longa</a></li>
+                    <li class="menu__lista"><a href="#!" class="menu__link">Parceiros</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="banner">
+            <img class="banner__img" src="assets/img/banner.png" alt="promoção de black friday. Produtos com até 60% off. Ganhe +10% de desconto pagando pela Addi">
+        </section>
+
+        <main class="main">
+            <h1 class="main__title">Produtos</h1>
+
+            <div class="main__content">
+                <div class="main__produto">
+                    <a class="main__produto--link" href="#!">
+                        <img class="main__produto--img" src="assets/img/caneca.png" alt="Caneca Apolo Branca Microfone">
+                        <h2 class="main__produto--nome">Caneca Apolo Branca - Microfone</h2>
+                    </a>
+                    
+                    <div class="main__produto--infos">
+                        <p class="main__produto--desconto">R$79,90</p>
+                        <p class="main__produto--preco">R$39,90</p>
+                    </div>
+                </div>
+
+                <div class="main__produto">
+                    <a class="main__produto--link" href="#!">
+                        <img class="main__produto--img" src="assets/img/bone.png" alt="Boné Apolo Branca Microfone">
+                        <h2 class="main__produto--nome">Boné Apolo Branca - Microfone</h2>
+                    </a>
+                    
+                    <div class="main__produto--infos">
+                        <p class="main__produto--desconto">R$79,90</p>
+                        <p class="main__produto--preco">R$39,90</p>
+                    </div>
+                </div>
+
+                <div class="main__produto">
+                    <a class="main__produto--link" href="#!">
+                        <img class="main__produto--img" src="assets/img/camisa.png" alt="Camisa Apolo Branca Microfone">
+                        <h2 class="main__produto--nome">Camisa Apolo Branca - Microfone</h2>
+                    </a>
+                    
+                    <div class="main__produto--infos">
+                        <p class="main__produto--desconto">R$89,90</p>
+                        <p class="main__produto--preco">R$69,90</p>
+                    </div>
+                </div>
+
+                <div class="main__produto">
+                    <a class="main__produto--link" href="#!">
+                        <img class="main__produto--img" src="assets/img/caneta.png" alt="Caneta Apolo Branca Microfone">
+                        <h2 class="main__produto--nome">Caneta Apolo Branca - Microfone</h2>
+                    </a>
+                    
+                    <div class="main__produto--infos">
+                        <p class="main__produto--desconto">R$79,90</p>
+                        <p class="main__produto--preco">R$39,90</p>
+                    </div>
+                </div>
+
+                <div class="main__produto">
+                    <a class="main__produto--link" href="#!">
+                        <img class="main__produto--img" src="assets/img/chaveiro.png" alt="Chaveiro Apolo Branca Microfone">
+                        <h2 class="main__produto--nome">Chaveiro Apolo - Microfone</h2>
+                    </a>
+                    
+                    <div class="main__produto--infos">
+                        <p class="main__produto--desconto">R$79,90</p>
+                        <p class="main__produto--preco">R$39,90</p>
+                    </div>
+                </div>
+
+                <div class="main__produto">
+                    <a class="main__produto--link" href="#!">
+                        <img class="main__produto--img" src="assets/img/squeeze.png" alt="Squeeze Apolo Branco Microfone">
+                        <h2 class="main__produto--nome">Squeeze Apolo Branco - Microfone</h2>
+                    </a>
+                    
+                    <div class="main__produto--infos">
+                        <p class="main__produto--desconto">R$89,90</p>
+                        <p class="main__produto--preco">R$69,90</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__pagamentos">
+                    <h2 class="footer__title">Formas de Pagamento</h2>
+                    <img class="footer__img" src="assets/img/formas-de-pagamento.png" alt="Formas de pagamento">
+                </div>
+
+                <div class="footer__fale-conosco">
+                    <h2 class="footer__title">Fale Conosco</h2>
+                    <p class="footer__contatos">
+                        apoloindustries@gmail.com<br>
+                        14 -996168253   
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__social-links">
+                <a href="#!" target="_blank" aria-label="Instagram da Apolo"><img src="assets/img/insta.png" alt></a>
+                <a href="#!" target="_blank" aria-label="Facebook da Apolo"><img src="assets/img/face.png" alt></a>
+                <a href="#!" target="_blank" aria-label="YouTube da Apolo"><img src="assets/img/youtube.png" alt></a>
+                <a href="#!" target="_blank" aria-label="TikTok da Apolo"><img src="assets/img/tiktok.png" alt></a>
+                <a href="#!" target="_blank" aria-label="Twitter da Apolo"><img src="assets/img/twitter.png" alt></a>
+                <a href="#!" target="_blank" aria-label="Pinterest da Apolo"><img src="assets/img/pinterest.png" alt></a>
+            </div>
+        </footer>
+
+        <script src="assets/js/menu-lateral.js"></script>
+    </body>
+</html>

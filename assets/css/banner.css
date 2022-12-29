@@ -1,0 +1,15 @@
+.banner{
+    width: 100%;
+}
+
+.banner__img{
+    vertical-align: top;
+
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .banner{
+        display: none;
+    }
+}
